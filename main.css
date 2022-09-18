@@ -1,0 +1,132 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 03 Sep 2022, 10:56:53 PM
+    Author     : mathokm
+*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'fira sans', sans-serif;
+} /*This is the body of the document. */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: skyblue;
+    color: skyblue;
+} /*This will target the header of the document. The content will be centred in bigger screens.*/
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+   margin: 0 auto;
+}  /*This will target the header h1 of the document. It's changing the default size of the heading and colour.*/
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 1rem;
+}
+#new-wish-form {
+    display: flex;
+}
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+#new-wish-input {
+    flex: 1 1 0%;
+    background-color: lightyellow;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: skyblue;
+    font-size: 1.25rem;
+}
+#new-wish-input::placeholder {
+    color: grey;
+}
+#new-wish-submit {
+    color: blue;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, blueviolet, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#new-wish-submit:hover {
+    opacity: 0.8;
+}
+#new-wish-submit:active {
+    opacity: 0.6;
+}
+main {
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+.wish-list h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 1rem;
+}
+#wishes .wish {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightyellow;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+    #wishes .wish .content {
+        flex: 1 1 0%;
+    }
+#wishes .wish .content .text {
+    color: skyblue;
+    font-size: 1.25rem;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+#wishes .wish .content .text:not(:read-only) {
+    color: blue;
+}
+#wishes .wish .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+.wish .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.wish .actions button:hover {
+    opacity: 0.8;
+}
+.wish .actions button:active {
+    opacity: 0.6;
+}
+
+.wish .actions .edit {
+    background-image: linear-gradient(to right, blueviolet, yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.wish .actions .delete {
+    color: blueviolet;
+}

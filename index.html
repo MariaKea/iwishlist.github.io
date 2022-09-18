@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css" /> <!-- This is linking our CSS file, that has styling in it -->
+    </head>
+    <body>
+        
+        <header>
+            <h1> Wish List </h1>  <!-- The name of the web page -->
+             <!-- Doing a form for the wish list -->
+            <form id="new-wish-form"> <!-- This is our ID and it enables us to target its properties so we can style it in CSS.-->
+                <input type="text" id="new-wish-input" placeholder="Reach for your dreams"  onclick="window.alert('Yay, your adding a wish');" />  <!-- After the wish has been send, a pop out will appear, to show the sender that their wish is added in the list -->
+                <input type="submit" id="new-wish-submit" value="Add Wish"  />  <!-- The submit button -->
+            </form> <!-- This is where the form ends -->
+        </header>
+        
+        <main>
+            <section class="wish-list">
+                <h2> Wishes </h2>
+                <div id="wishes"> <!-- This is where we will put our Wishes, the ID allows us to target it -->
+                    
+                   <!-- This is a dummy task, that made us style our CSS
+                   
+                   <div class="wish">
+                        <div class="content">
+                            <input type="text" class="text" value="My goal wish" readonly />
+                        </div>
+                        <div class="actions">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div> -->
+                   
+                </div>
+            </section>
+        </main>
+        <script src="main.js"></script>
+        
+    </body>
+</html>
